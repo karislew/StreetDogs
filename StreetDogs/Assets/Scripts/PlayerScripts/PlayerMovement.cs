@@ -8,16 +8,17 @@ public class PlayerMovement : MonoBehaviour
 {
     private Vector2 inputCoords;
     private Vector2 direction;
-    private CharacterController controller;
+    private Rigidbody2D rb;
     private SpriteRenderer sprite;
 
     public float moveSpeed;
     public BoxCollider2D interactionTrigger;
+    public BoxCollider2D eatingTrigger;
 
     private void Awake()
     {
         //Grabs character controller component
-        controller = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody2D>();
 
         //Grabs character sprite
         sprite = GetComponent<SpriteRenderer>();
@@ -27,18 +28,20 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         //Creates velocity
-        controller.Move(direction * moveSpeed *  Time.deltaTime);
+        rb.velocity = direction * moveSpeed;
 
-        //Flips sprite and interaction trigger based on direction player is moving
-        if (controller.velocity.x > 0)
+        //Flips sprite and triggers based on direction player is moving
+        if (rb.velocity.x > 0)
         {
             sprite.flipX = true;
             interactionTrigger.offset = new Vector2(1, 0);
+            eatingTrigger.offset = new Vector2(1, 0);
         }
-        else if (controller.velocity.x < 0)
+        else if (rb.velocity.x < 0)
         {
             sprite.flipX = false;
             interactionTrigger.offset = new Vector2(-1, 0);
+            eatingTrigger.offset = new Vector2(-5, 0);
         }
     }
 

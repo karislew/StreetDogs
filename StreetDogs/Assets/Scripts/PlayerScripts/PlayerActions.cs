@@ -19,6 +19,7 @@ public class PlayerActions : MonoBehaviour
     }
 
     //---------- ALL ACTIONS ----------
+    //Calls respective functions from target interactable object
 
     public void Bark(InputAction.CallbackContext context)
     {
@@ -29,7 +30,7 @@ public class PlayerActions : MonoBehaviour
             audioPlayer.pitch = Random.Range(.75f, 1.25f);
             audioPlayer.clip = soundEffects[0];
             audioPlayer.Play();
-            if (interactionTarget != null)
+            if (interactionTarget != null && interactionTarget.canBeInteracted)
             {
                 interactionTarget.onBark();
             }
@@ -44,7 +45,7 @@ public class PlayerActions : MonoBehaviour
             audioPlayer.pitch = Random.Range(.75f, 1.25f);
             audioPlayer.clip = soundEffects[1];
             audioPlayer.Play();
-            if (interactionTarget != null)
+            if (interactionTarget != null && interactionTarget.canBeInteracted)
             {
                 interactionTarget.onGrowl();
             }
@@ -59,7 +60,7 @@ public class PlayerActions : MonoBehaviour
             audioPlayer.pitch = Random.Range(.75f, 1.25f);
             audioPlayer.clip = soundEffects[2];
             audioPlayer.Play();
-            if (interactionTarget != null)
+            if (interactionTarget != null && interactionTarget.canBeInteracted)
             {
                 interactionTarget.onBeg();
             }
@@ -71,7 +72,8 @@ public class PlayerActions : MonoBehaviour
         if (context.performed)
         {
             //Debug.Log("INTERACT");
-            if (interactionTarget != null)
+            //No sound plays for this one
+            if (interactionTarget != null && interactionTarget.canBeInteracted)
             {
                 interactionTarget.onInteract();
             }

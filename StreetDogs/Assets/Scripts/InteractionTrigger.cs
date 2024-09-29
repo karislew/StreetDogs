@@ -10,17 +10,23 @@ public class InteractionTrigger : MonoBehaviour
 
     private Interactable target;
 
+    //Sets target as interactable
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.GetComponent<Interactable>() != null)
+        if(collision.tag == "Interactable")
         {
             print("HIT");
             target = collision.GetComponent<Interactable>();
             player.interactionTarget = target;
-            target.canBeInteracted = true;
+            //If interactable has already performed an action, they cannot be interacted with again.
+            if(target.hasDoneAction == false)
+            {
+                target.canBeInteracted = true;
+            }
         }
     }
 
+    //Un-sets target as interactable
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (collision.tag == "Interactable")

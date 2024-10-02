@@ -21,7 +21,7 @@ public class Interactable : MonoBehaviour
     public void Awake()
     {
         signal = gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>();
-        currentTask = FindFirstObjectByType<TextMeshProUGUI>();
+        currentTask = GameObject.FindGameObjectWithTag("CurrentTask").GetComponent<TextMeshProUGUI>();
         completionIcon = FindFirstObjectByType<Image>();
     }
 

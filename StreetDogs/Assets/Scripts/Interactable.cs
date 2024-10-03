@@ -12,10 +12,11 @@ public class Interactable : MonoBehaviour
     public bool canBeInteracted;
     public bool hasDoneAction;
     public SpriteRenderer signal;
-    //UI Components, have to be set in editor
     public TextMeshProUGUI currentTask;
     public Image completionIcon;
     public string newCurrentTaskText;
+    //Increment player's task count when they've been done CORRECTLY (see ChurroNPC)
+    public PlayerActions player;
     
     //Grabs exclamation point sprite and UI elements
     public void Awake()
@@ -23,6 +24,7 @@ public class Interactable : MonoBehaviour
         signal = gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>();
         currentTask = GameObject.FindGameObjectWithTag("CurrentTask").GetComponent<TextMeshProUGUI>();
         completionIcon = FindFirstObjectByType<Image>();
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerActions>();
     }
 
     //Updates to let player know they are in range of interaction...

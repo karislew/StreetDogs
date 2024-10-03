@@ -25,7 +25,7 @@ public class ChurroNPC : Interactable
         base.Update();
         if (shouldRun)
         {
-            rb.velocity = new Vector3(7.5f, 0, 0);
+            rb.velocity = new Vector3(10f, 0, 0);
         }
         if(transform.position.x >= 15)
         {
@@ -39,6 +39,8 @@ public class ChurroNPC : Interactable
         //Spawns churro and correctly completes task
         Instantiate(churro, gameObject.transform.position, Quaternion.identity);
         completeTask(Color.green);
+        //Increment player's task count when they've been done CORRECTLY (public opinion counter kinda)
+        player.tasksCompleted++;
         //NPC has done an action and cannot be interacted with anymore
         hasDoneAction = true;
         canBeInteracted = false;
@@ -48,6 +50,7 @@ public class ChurroNPC : Interactable
         //Spawns churro and correctly completes task
         Instantiate(churro, gameObject.transform.position, Quaternion.identity);
         completeTask(Color.green);
+        player.tasksCompleted++;
         hasDoneAction = true;
         canBeInteracted = false;
     }
@@ -61,6 +64,6 @@ public class ChurroNPC : Interactable
     }
     public override void onInteract()
     {
-       //No behavior
+       //SHOO ANIMATION
     }
 }

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauseMenuUI;
     PlayerInput playerControls;
     private InputAction escape;
+    
     [SerializeField] private InputActionAsset inputActions;
     private PlayerInput playerInput;
    

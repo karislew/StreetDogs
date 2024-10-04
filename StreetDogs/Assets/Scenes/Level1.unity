@@ -2306,6 +2306,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: e39dc73c-0fd2-466f-9c11-df21baad1c92
     m_ActionName: Gameplay/Interact[/Keyboard/z,/24C6-891A/button5]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 1a3ae60a-95b3-4bb5-a525-f44928e9dfbd
+    m_ActionName: UI/EscapeKey[/Keyboard/escape,/SwitchProControllerHID/start]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Gameplay

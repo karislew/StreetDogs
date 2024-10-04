@@ -153,6 +153,17 @@
                 },
                 {
                     "name": "",
+                    "id": "79e9dc2e-3d53-4118-981e-a349409550c6",
+                    "path": "<Gamepad>/leftStick",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "9b76e17f-e1ba-4e11-af40-ea47330fc2fe",
                     "path": "<Keyboard>/x",
                     "interactions": "",
@@ -166,6 +177,17 @@
                     "name": "",
                     "id": "daa1bf69-7c29-4720-80f1-fbcf9c24d967",
                     "path": "<Joystick>/trigger",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Bark",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "bb425424-5963-4947-9391-81a931cfa314",
+                    "path": "<Gamepad>/buttonSouth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",
@@ -197,6 +219,17 @@
                 },
                 {
                     "name": "",
+                    "id": "8f7c5e63-9191-4ebf-b73b-6cdf0df3f754",
+                    "path": "<Gamepad>/buttonEast",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Growl",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "ada03fd3-14e5-48dd-85f2-e118935d16b6",
                     "path": "<Keyboard>/v",
                     "interactions": "",
@@ -219,6 +252,17 @@
                 },
                 {
                     "name": "",
+                    "id": "9bc5ebb1-a344-4e1d-9eac-d7aa2740c1f3",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Beg",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "5f647d85-1614-4d7b-be3b-5704a32feed2",
                     "path": "<Keyboard>/z",
                     "interactions": "",
@@ -232,6 +276,17 @@
                     "name": "",
                     "id": "e34791f5-5f9e-492b-bbb9-fa3fa4bc9a67",
                     "path": "<HID::24C6-891A>/button5",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "0ec62a71-deb1-4f5c-b862-18c8132f6c7c",
+                    "path": "<Gamepad>/buttonNorth",
                     "interactions": "",
                     "processors": "",
                     "groups": "",

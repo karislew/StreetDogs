@@ -4,14 +4,17 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PauseMenu : MonoBehaviour
 {
     // Start is called before the first frame update
     public static bool GamePaused=false;
     public GameObject pauseMenuUI;
+    public GameObject resumeButton;
     PlayerInput playerControls;
     private InputAction escape;
+    
     [SerializeField] private InputActionAsset inputActions;
     private PlayerInput playerInput;
    
@@ -45,6 +48,7 @@ public class PauseMenu : MonoBehaviour
     }
     public void Resume()
     {
+        
         pauseMenuUI.SetActive(false);
         //freeze game
         Time.timeScale = 1f;
@@ -53,6 +57,7 @@ public class PauseMenu : MonoBehaviour
     }
     void Pause()
     {
+        EventSystem.current.SetSelectedGameObject(resumeButton);
         pauseMenuUI.SetActive(true);
         //freeze game
         Time.timeScale = 0f;

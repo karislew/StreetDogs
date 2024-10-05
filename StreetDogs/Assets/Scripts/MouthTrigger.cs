@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
 
-public class EatingTrigger : MonoBehaviour
+public class MouthTrigger : MonoBehaviour
 {
 
     public PlayerActions player;
@@ -20,11 +20,17 @@ public class EatingTrigger : MonoBehaviour
     //Eats anything tagged as food
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Eats food (churro, candy)
         if(collision.tag == "Food")
         {
             audioPlayer.pitch = Random.Range(.75f, 1.25f);
             audioPlayer.clip = eatSound;
             audioPlayer.Play();
+            Destroy(collision.gameObject);
+        }
+        //Destroys collectibles with no eating sound (airhorn, fliers, key)
+        else if(collision.tag == "Collectible")
+        {
             Destroy(collision.gameObject);
         }
     }

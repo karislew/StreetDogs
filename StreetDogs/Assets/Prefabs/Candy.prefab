@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6386456983700394917}
   - component: {fileID: 6190651701395693016}
   m_Layer: 0
-  m_Name: Churro
+  m_Name: Candy
   m_TagString: Food
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 2.238, y: -1.494, z: 0}
-  m_LocalScale: {x: 0.25, y: 1, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.7169812, g: 0.45331782, b: 0.09807763, a: 1}
+  m_Color: {r: 0.78437173, g: 0.8584906, b: 0.125534, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

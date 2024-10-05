@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Interactable
   - Food
+  - CurrentTask
+  - Collectible
   layers:
   - Default
   - TransparentFX

@@ -9,6 +9,9 @@ public class PlayerActions : MonoBehaviour
     
     public Interactable interactionTarget = null;
 
+    //Public opinion counter
+    public int tasksCompleted = 0;
+
     //Index 0 is BARK, Index 1 is GROWL, Index 2 is BEG
     public AudioClip[] soundEffects;
 

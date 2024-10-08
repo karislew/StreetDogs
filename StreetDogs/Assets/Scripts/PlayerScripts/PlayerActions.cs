@@ -36,6 +36,8 @@ public class PlayerActions : MonoBehaviour
             if (interactionTarget != null && interactionTarget.canBeInteracted)
             {
                 interactionTarget.onBark();
+       
+       
             }
         }
     }
@@ -51,6 +53,7 @@ public class PlayerActions : MonoBehaviour
             if (interactionTarget != null && interactionTarget.canBeInteracted)
             {
                 interactionTarget.onGrowl();
+        
             }
         }
     }
@@ -66,6 +69,7 @@ public class PlayerActions : MonoBehaviour
             if (interactionTarget != null && interactionTarget.canBeInteracted)
             {
                 interactionTarget.onBeg();
+            
             }
         }
     }
@@ -79,6 +83,7 @@ public class PlayerActions : MonoBehaviour
             if (interactionTarget != null && interactionTarget.canBeInteracted)
             {
                 interactionTarget.onInteract();
+              
             }
         }
     }

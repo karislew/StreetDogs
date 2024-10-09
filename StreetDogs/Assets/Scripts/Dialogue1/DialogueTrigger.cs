@@ -5,6 +5,9 @@ using UnityEngine;
 public class DialogueTrigger : MonoBehaviour
 {
     //public string name;
+    //public Animator animator;
+    public GameObject npcDialogueBox;
+    public TMP_Text npcDialogueText;
     public Dialogue barkDialogue;
     public Dialogue growlDialogue;
     public Dialogue interactDialogue;
@@ -12,7 +15,7 @@ public class DialogueTrigger : MonoBehaviour
 
     public void TriggerDialogue(string action)
     {
-        
+  
         Dialogue dialogueToTrigger = null;
         switch (action)
         {
@@ -34,10 +37,11 @@ public class DialogueTrigger : MonoBehaviour
         }
         if (dialogueToTrigger != null)
         {
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogueToTrigger);
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogueToTrigger,npcDialogueBox,npcDialogueText);
+            
         }
     }
-
+  
 
     /*
     // Start is called before the first frame update

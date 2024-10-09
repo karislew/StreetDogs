@@ -8,13 +8,21 @@ public class DialogueManager : MonoBehaviour
 {
 
     //public TMP_Text nameText;
-    public TMP_Text dialogueText;
+    public GameObject[] dialogueBoxes;
+    private TMP_Text activedialogueText;
+    private GameObject activeDialogueBox;
     public GameObject window;
+    
+    private Animator currentAnimator; 
+
+    
 
     private Queue<string> sentences;
+   
+    
     // Start is called before the first frame update
 
-    private void ToggleWindow(bool show)
+    public void ToggleWindow(bool show)
     {
         window.SetActive(show);
     }
@@ -23,16 +31,23 @@ public class DialogueManager : MonoBehaviour
         sentences = new Queue<string>();
         
     }
-    public void StartDialogue(Dialogue dialogue)
+    public void StartDialogue(Dialogue dialogue,GameObject dialogueBox,TMP_Text dialogueText)
     {
+        activeDialogueText = dialogueText;
+        activeDialogueBox = dialogueBox;
+        //currentAnimator=animator;
+        //currentAnimator.SetBool("IsOpen", true);
         //nameText.text = name;
         sentences.Clear();
-        ToggleWindow(true);
+       
+        
      
         foreach (string sentence in dialogue.sentences)
         {
             sentences.Enqueue(sentence);
         }
+
+        Debug.Log("senences" + sentences.Count);
 
 
 
@@ -42,20 +57,31 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count==0)
         {
+            Debug.Log("About to end");
             EndDialogue();
             return;
         }
-        else
-        {
-            DisplayNextSentence();
+        else{
+            
+            string sentence = sentences.Dequeue();
+            activedialogueText.text = sentence;
+            StartCoroutine(Wait());
         }
-        string sentence = sentences.Dequeue();
-        dialogueText.text = sentence;
     }
     void EndDialogue()
     {
         Debug.Log("End of Convo");
-        ToggleWindow(false);
+        activeDialogueBox =null;
+        activedialogueText = null;
+        //currentAnimator.SetBool("IsOpen", false);
+        //ToggleWindow(false);
+        
+    }
+
+    private IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(6);
+        DisplayNextSentence();
     }
 
     // Update is called once per frame

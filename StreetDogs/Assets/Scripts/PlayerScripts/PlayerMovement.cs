@@ -14,6 +14,7 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public BoxCollider2D interactionTrigger;
     public BoxCollider2D eatingTrigger;
+    public SpriteRenderer speechBubble;
 
     public Transform feet;
     public Transform raycastOrigin;
@@ -44,12 +45,14 @@ public class PlayerMovement : MonoBehaviour
         if (rb.velocity.x > 0)
         {
             sprite.flipX = true;
+            speechBubble.gameObject.transform.localPosition = new Vector3(6, 2.25f, -0.5f);
             interactionTrigger.offset = new Vector2(1, 0);
             eatingTrigger.offset = new Vector2(1, 0);
         }
         else if (rb.velocity.x < 0)
         {
             sprite.flipX = false;
+            speechBubble.gameObject.transform.localPosition = new Vector3(-6, 2.25f, -0.5f);
             interactionTrigger.offset = new Vector2(-1, 0);
             eatingTrigger.offset = new Vector2(-5, 0);
         }

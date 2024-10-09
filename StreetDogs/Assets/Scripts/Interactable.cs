@@ -25,7 +25,7 @@ public class Interactable : MonoBehaviour
         dialogueTrigger = GetComponent<DialogueTrigger>();
         signal = gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>();
         currentTask = GameObject.FindGameObjectWithTag("CurrentTask").GetComponent<TextMeshProUGUI>();
-        completionIcon = FindFirstObjectByType<Image>();
+        completionIcon = GameObject.FindGameObjectWithTag("CompletionIndicator").GetComponent<Image>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerActions>();
     }
 

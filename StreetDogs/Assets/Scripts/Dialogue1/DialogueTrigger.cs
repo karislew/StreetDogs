@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
-    public string name;
+    //public string name;
     public Dialogue barkDialogue;
     public Dialogue growlDialogue;
     public Dialogue interactDialogue;
@@ -34,7 +34,7 @@ public class DialogueTrigger : MonoBehaviour
         }
         if (dialogueToTrigger != null)
         {
-            FindObjectOfType<DialogueManager>().StartDialogue(dialogueToTrigger,name);
+            FindObjectOfType<DialogueManager>().StartDialogue(dialogueToTrigger);
         }
     }
 

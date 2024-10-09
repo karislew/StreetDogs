@@ -32,14 +32,17 @@ public class ThiefNPC : Interactable
 
     public override void onBark()
     {
+        base.onBark();
         //SHOO ANIMATION
     }
     public override void onBeg()
     {
+        base.onBeg();
         //No behavior
     }
     public override void onGrowl()
     {
+        base.onGrowl();
         //Runs away and fails task
         Instantiate(airhorn, gameObject.transform.position, Quaternion.identity);
         candySeller.hasAirhorn = true;
@@ -50,6 +53,7 @@ public class ThiefNPC : Interactable
     }
     public override void onInteract()
     {
+        base.onInteract();
         //Wrestle animation
     }
 }

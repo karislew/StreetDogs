@@ -9,7 +9,7 @@ public class DialogueManager : MonoBehaviour
 
     //public TMP_Text nameText;
     public GameObject[] dialogueBoxes;
-    private TMP_Text activedialogueText;
+    private TMP_Text activeDialogueText;
     private GameObject activeDialogueBox;
     public GameObject window;
     
@@ -64,7 +64,7 @@ public class DialogueManager : MonoBehaviour
         else{
             
             string sentence = sentences.Dequeue();
-            activedialogueText.text = sentence;
+            activeDialogueText.text = sentence;
             StartCoroutine(Wait());
         }
     }
@@ -72,7 +72,7 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("End of Convo");
         activeDialogueBox =null;
-        activedialogueText = null;
+        activeDialogueText = null;
         //currentAnimator.SetBool("IsOpen", false);
         //ToggleWindow(false);
         

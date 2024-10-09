@@ -22,10 +22,7 @@ public class DialogueManager : MonoBehaviour
     
     // Start is called before the first frame update
 
-    public void ToggleWindow(bool show)
-    {
-        window.SetActive(show);
-    }
+   
     void Start()
     {
         sentences = new Queue<string>();
@@ -35,6 +32,7 @@ public class DialogueManager : MonoBehaviour
     {
         activeDialogueText = dialogueText;
         activeDialogueBox = dialogueBox;
+        //activeDialogueBox.SetActive(true);
         //currentAnimator=animator;
         //currentAnimator.SetBool("IsOpen", true);
         //nameText.text = name;
@@ -71,8 +69,10 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         Debug.Log("End of Convo");
+        //activeDialogueBox.SetActive(false);
         activeDialogueBox =null;
         activeDialogueText = null;
+
         //currentAnimator.SetBool("IsOpen", false);
         //ToggleWindow(false);
         

@@ -64,9 +64,11 @@ public class CandyNPC : Interactable
     }
     public override void onInteract()
     {
+        
         if (hasAirhorn)
         {
             base.onInteract();
+            
             newCurrentTaskText = "";
             Instantiate(candy, gameObject.transform.position, Quaternion.identity);
             if (hasUpdated == false)

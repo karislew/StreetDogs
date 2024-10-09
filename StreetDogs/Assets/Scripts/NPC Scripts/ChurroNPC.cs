@@ -75,6 +75,7 @@ public class ChurroNPC : Interactable
     public override void onInteract()
     {
         base.onInteract();
+        Debug.Log("The Z trigger is working");
         //dialogueTrigger.TriggerDialogue("Interact");
 
        //SHOO ANIMATION

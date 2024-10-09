@@ -2178,7 +2178,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: growlDialogue.sentences.Array.data[0]
-      value: EEK
+      value: Go away
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: interactDialogue.sentences.Array.size
@@ -2186,7 +2186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: interactDialogue.sentences.Array.data[0]
-      value: Here you go
+      value: Here u go
       objectReference: {fileID: 0}
     - target: {fileID: 8155971417302114900, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_Color.b
@@ -4323,13 +4323,13 @@ MonoBehaviour:
     m_ActionName: Gameplay/Beg[/Keyboard/v,/24C6-891A/button4]
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 11500000, guid: d8927456b34ec4b3dbe99bcafc3a6706, type: 3}
+      - m_Target: {fileID: 1830596541}
         m_TargetAssemblyTypeName: PlayerActions, Assembly-CSharp
-        m_MethodName: 
-        m_Mode: 1
+        m_MethodName: Interact
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 

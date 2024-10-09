@@ -1,0 +1,501 @@
+fileFormatVersion: 2
+guid: 0c43fb80e64076d42b9b0d8b01890386
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: walking character sheet_0
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 373
+        width: 140
+        height: 157
+      alignment: 9
+      pivot: {x: 0.8233207, y: 0.25223264}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c14136d3a8abb4da4299e5a40cc5c0
+      internalID: 205265528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_1
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 357
+        width: 110
+        height: 164
+      alignment: 9
+      pivot: {x: 0.6738692, y: 0.1836183}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281bd5323ac87c24d84ec63b6e6d15b4
+      internalID: -1891034322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_2
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 435
+        width: 71
+        height: 114
+      alignment: 9
+      pivot: {x: 0.14138837, y: 0.89706045}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d092146b49749e47bbdbadf698e0e67
+      internalID: 1579438787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_3
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 208
+        width: 292
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1428f2e9d4745e4d8389e2b46fb7b4e
+      internalID: 1409350946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_4
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 347
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f0dc9687a73434d8f3f7120ab20c5c
+      internalID: -631303073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_5
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 207
+        width: 59
+        height: 171
+      alignment: 9
+      pivot: {x: 0.5601884, y: 0.860456}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5278c48d0b2f16a47ad79963e2210623
+      internalID: -1267568292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_6
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 219
+        width: 96
+        height: 192
+      alignment: 9
+      pivot: {x: 0.49263254, y: 0.8609989}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57c8381fc80502d42836163ca06ac832
+      internalID: 225081237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_7
+      rect:
+        serializedVersion: 2
+        x: 686
+        y: 224
+        width: 74
+        height: 172
+      alignment: 9
+      pivot: {x: 0.50000083, y: 0.8618556}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a4a38adb5f42c4a81948cf2dee4b07
+      internalID: -567124566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_8
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 204
+        width: 97
+        height: 191
+      alignment: 9
+      pivot: {x: 0.5173774, y: 0.8309483}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0df65047874d441a71fc2aacd163f7
+      internalID: -374433608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_9
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 143
+        width: 45
+        height: 24
+      alignment: 9
+      pivot: {x: 0.7357551, y: 0.4115912}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93db1786a4f1b194f95ce13f1459efce
+      internalID: 1396247053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_10
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 155
+        width: 42
+        height: 62
+      alignment: 9
+      pivot: {x: 0.6683967, y: 0.79659444}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5722ad803c58a449aecd314bdbed051
+      internalID: -815421577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_11
+      rect:
+        serializedVersion: 2
+        x: 564
+        y: 161
+        width: 57
+        height: 66
+      alignment: 9
+      pivot: {x: 0.7233469, y: 0.68217355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ca110e7731cc8d47a9f5ccd69b6f031
+      internalID: 401424214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_12
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 150
+        width: 44
+        height: 23
+      alignment: 9
+      pivot: {x: 0.8160553, y: 0.39006773}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548009939e1cfb74e980be3ddb5dd653
+      internalID: 820010979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_13
+      rect:
+        serializedVersion: 2
+        x: 755
+        y: 157
+        width: 42
+        height: 63
+      alignment: 9
+      pivot: {x: 0.70066905, y: 0.8210723}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe7e1cf921b51148bff73199b355729
+      internalID: 1503930364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_14
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 146
+        width: 56
+        height: 67
+      alignment: 9
+      pivot: {x: 0.7934799, y: 0.73900706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a6e5f38d7186a24a85c0d9c81db62eb
+      internalID: -704725120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_15
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 143
+        width: 45
+        height: 16
+      alignment: 9
+      pivot: {x: 0.76718885, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f908ac84ea595944890a0702f3bbee5c
+      internalID: -288147022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walking character sheet_16
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 143
+        width: 46
+        height: 16
+      alignment: 9
+      pivot: {x: 0.78398997, y: 0.49999905}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6674c0a10ed8c14fb9ff04ba226b191
+      internalID: 538679019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      walking character sheet_0: 205265528
+      walking character sheet_1: -1891034322
+      walking character sheet_10: -815421577
+      walking character sheet_11: 401424214
+      walking character sheet_12: 820010979
+      walking character sheet_13: 1503930364
+      walking character sheet_14: -704725120
+      walking character sheet_15: -288147022
+      walking character sheet_16: 538679019
+      walking character sheet_2: 1579438787
+      walking character sheet_3: 1409350946
+      walking character sheet_4: -631303073
+      walking character sheet_5: -1267568292
+      walking character sheet_6: 225081237
+      walking character sheet_7: -567124566
+      walking character sheet_8: -374433608
+      walking character sheet_9: 1396247053
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

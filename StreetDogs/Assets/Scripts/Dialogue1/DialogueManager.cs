@@ -32,7 +32,7 @@ public class DialogueManager : MonoBehaviour
     {
         activeDialogueText = dialogueText;
         activeDialogueBox = dialogueBox;
-        //activeDialogueBox.SetActive(true);
+        activeDialogueBox.SetActive(true);
         //currentAnimator=animator;
         //currentAnimator.SetBool("IsOpen", true);
         //nameText.text = name;
@@ -45,7 +45,7 @@ public class DialogueManager : MonoBehaviour
             sentences.Enqueue(sentence);
         }
 
-        Debug.Log("senences" + sentences.Count);
+        //Debug.Log("senences" + sentences.Count);
 
 
 
@@ -55,7 +55,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count==0)
         {
-            Debug.Log("About to end");
+            //Debug.Log("About to end");
             EndDialogue();
             return;
         }
@@ -70,8 +70,19 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("End of Convo");
         //activeDialogueBox.SetActive(false);
-        activeDialogueBox =null;
+        
+        if (activeDialogueBox!=null)
+        {
+            activeDialogueBox.SetActive(false);
+        }
+    
         activeDialogueText = null;
+
+        activeDialogueBox=null;
+        
+
+        return;
+
 
         //currentAnimator.SetBool("IsOpen", false);
         //ToggleWindow(false);
@@ -80,7 +91,7 @@ public class DialogueManager : MonoBehaviour
 
     private IEnumerator Wait()
     {
-        yield return new WaitForSeconds(6);
+        yield return new WaitForSeconds(4);
         DisplayNextSentence();
     }
 

@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 8155971417302114900}
   - component: {fileID: 495658767817242383}
   - component: {fileID: 3012412514019118653}
+  - component: {fileID: 5635736955772005891}
   m_Layer: 6
   m_Name: NPC
   m_TagString: Interactable
@@ -243,3 +244,30 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
+--- !u!114 &5635736955772005891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8508401039188529331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8927456b34ec4b3dbe99bcafc3a6706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: 
+    sentences: []
+  barkDialogue:
+    name: 
+    sentences: []
+  growlDialogue:
+    name: 
+    sentences: []
+  interactDialogue:
+    name: 
+    sentences: []
+  begDialogue:
+    name: 
+    sentences: []

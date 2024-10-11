@@ -11,12 +11,14 @@ public class ChurroNPC : Interactable
     public GameObject churro;
     private bool shouldRun = false;
     private Rigidbody2D rb;
+    //private DialogueTrigger dialogueTrigger;
 
     private void Awake()
     {
         //Uses behavior from parent class, with additional code
         base.Awake();
         rb = GetComponent<Rigidbody2D>();
+        //dialogueTrigger = GetComponent<DialogueTrigger>(); 
     }
 
     //Makes character run away and disappear for Growl interaction
@@ -36,6 +38,8 @@ public class ChurroNPC : Interactable
     //Needs override keyword to create unique behavior
     public override void onBark()
     {
+        base.onBark();
+        
         //Spawns churro and correctly completes task
         Instantiate(churro, gameObject.transform.position, Quaternion.identity);
         completeTask(Color.green);
@@ -44,26 +48,36 @@ public class ChurroNPC : Interactable
         //NPC has done an action and cannot be interacted with anymore
         hasDoneAction = true;
         canBeInteracted = false;
+        //dialogueTrigger.TriggerDialogue("Bark");
     }
     public override void onBeg()
     {
+        base.onBeg();
+
         //Spawns churro and correctly completes task
         Instantiate(churro, gameObject.transform.position, Quaternion.identity);
         completeTask(Color.green);
         player.tasksCompleted++;
         hasDoneAction = true;
         canBeInteracted = false;
+        //dialogueTrigger.TriggerDialogue("Beg");
     }
     public override void onGrowl()
     {
+        base.onGrowl();
         //Runs away and fails task
         shouldRun = true;
         completeTask(Color.red);
         hasDoneAction = true;
         canBeInteracted = false;
+       // dialogueTrigger.TriggerDialogue("Growl");
     }
     public override void onInteract()
     {
+        base.onInteract();
+        Debug.Log("The Z trigger is working");
+        //dialogueTrigger.TriggerDialogue("Interact");
+
        //SHOO ANIMATION
     }
 }

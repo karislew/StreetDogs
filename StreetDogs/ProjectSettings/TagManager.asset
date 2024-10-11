@@ -8,6 +8,7 @@ TagManager:
   - Food
   - CurrentTask
   - Collectible
+  - CompletionIndicator
   layers:
   - Default
   - TransparentFX
@@ -18,7 +19,7 @@ TagManager:
   - Background
   - Player
   - Foreground
-  - 
+  - Ground
   - 
   - 
   - 
@@ -45,6 +46,9 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Objects
+    uniqueID: 3718528239
+    locked: 0
   - name: Player
-    uniqueID: 2580877121
+    uniqueID: 1806227607
     locked: 0

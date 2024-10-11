@@ -17,6 +17,7 @@ public class CandyNPC : Interactable
     {
         if (hasAirhorn)
         {
+            base.onBark();
             newCurrentTaskText = "";
             Instantiate(candy, gameObject.transform.position, Quaternion.identity);
             if (hasUpdated == false)
@@ -31,6 +32,7 @@ public class CandyNPC : Interactable
     {
         if (hasAirhorn)
         {
+            base.onBeg();
             newCurrentTaskText = "";
             Instantiate(candy, gameObject.transform.position, Quaternion.identity);
             if (hasUpdated == false)
@@ -49,6 +51,7 @@ public class CandyNPC : Interactable
     {
         if (hasAirhorn)
         {
+            base.onGrowl();
             newCurrentTaskText = "";
             Instantiate(candy, gameObject.transform.position, Quaternion.identity);
             if (hasUpdated == false)
@@ -61,8 +64,11 @@ public class CandyNPC : Interactable
     }
     public override void onInteract()
     {
+        
         if (hasAirhorn)
         {
+            base.onInteract();
+            
             newCurrentTaskText = "";
             Instantiate(candy, gameObject.transform.position, Quaternion.identity);
             if (hasUpdated == false)

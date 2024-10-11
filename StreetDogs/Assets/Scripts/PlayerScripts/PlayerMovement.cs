@@ -14,6 +14,12 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     public BoxCollider2D interactionTrigger;
     public BoxCollider2D eatingTrigger;
+    public SpriteRenderer speechBubble;
+
+    public Transform feet;
+    public Transform raycastOrigin;
+    public LayerMask layerMask;
+    private RaycastHit2D hit;
 
     private void Awake()
     {
@@ -25,6 +31,11 @@ public class PlayerMovement : MonoBehaviour
         
     }
 
+    private void FixedUpdate()
+    {
+        CheckGround();
+    }
+
     private void Update()
     {
         //Creates velocity
@@ -34,12 +45,14 @@ public class PlayerMovement : MonoBehaviour
         if (rb.velocity.x > 0)
         {
             sprite.flipX = true;
+            speechBubble.gameObject.transform.localPosition = new Vector3(6, 2.25f, -0.5f);
             interactionTrigger.offset = new Vector2(1, 0);
             eatingTrigger.offset = new Vector2(1, 0);
         }
         else if (rb.velocity.x < 0)
         {
             sprite.flipX = false;
+            speechBubble.gameObject.transform.localPosition = new Vector3(-6, 2.25f, -0.5f);
             interactionTrigger.offset = new Vector2(-1, 0);
             eatingTrigger.offset = new Vector2(-5, 0);
         }
@@ -50,6 +63,17 @@ public class PlayerMovement : MonoBehaviour
        //Checks for positive/negative input to determine direction
        inputCoords = context.ReadValue<Vector2>();
        direction = new Vector2(inputCoords.x, inputCoords.y);
-
     }
+
+    private void CheckGround()
+    {
+        hit = Physics2D.Raycast(raycastOrigin.position, Vector2.down, 100f, layerMask);
+        if(hit != false)
+        {
+            Vector2 temp = feet.position;
+            temp.y = hit.point.y;
+            feet.position = temp;
+        }
+    }
+
 }

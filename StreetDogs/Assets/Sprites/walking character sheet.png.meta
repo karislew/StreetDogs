@@ -110,28 +110,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: walking character sheet_0
+      name: head
       rect:
         serializedVersion: 2
-        x: 58
-        y: 373
-        width: 140
-        height: 157
+        x: 24
+        y: 423
+        width: 141
+        height: 156
       alignment: 9
-      pivot: {x: 0.8233207, y: 0.25223264}
+      pivot: {x: 0.80783665, y: 0.2379708}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68c14136d3a8abb4da4299e5a40cc5c0
-      internalID: 205265528
+      spriteID: a32b466549a30bc489a1067eae5223d8
+      internalID: -1813259564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking character sheet_1
+      name: neck
       rect:
         serializedVersion: 2
         x: 220
@@ -139,20 +139,20 @@ TextureImporter:
         width: 110
         height: 164
       alignment: 9
-      pivot: {x: 0.6738692, y: 0.1836183}
+      pivot: {x: 0.7068726, y: 0.20193109}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 281bd5323ac87c24d84ec63b6e6d15b4
-      internalID: -1891034322
+      spriteID: fa272cba9498e6041a02c6d8ac9eab03
+      internalID: -522722835
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking character sheet_2
+      name: tail
       rect:
         serializedVersion: 2
         x: 535
@@ -160,35 +160,35 @@ TextureImporter:
         width: 71
         height: 114
       alignment: 9
-      pivot: {x: 0.14138837, y: 0.89706045}
+      pivot: {x: 0.11420451, y: 0.9103174}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d092146b49749e47bbdbadf698e0e67
-      internalID: 1579438787
+      spriteID: 261b72a5a86cabe40818b83f7fc63455
+      internalID: -1241889657
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking character sheet_3
+      name: front leg top
       rect:
         serializedVersion: 2
-        x: 77
-        y: 208
-        width: 292
-        height: 142
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 675
+        y: 398
+        width: 75
+        height: 172
+      alignment: 9
+      pivot: {x: 0.4887614, y: 0.88465667}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1428f2e9d4745e4d8389e2b46fb7b4e
-      internalID: 1409350946
+      spriteID: a53ad41ef2134634f9b0b73fa56742dc
+      internalID: -1859994476
       vertices: []
       indices: 
       edges: []
@@ -197,46 +197,46 @@ TextureImporter:
       name: walking character sheet_4
       rect:
         serializedVersion: 2
-        x: 410
-        y: 347
+        x: 406
+        y: 360
         width: 4
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e4f0dc9687a73434d8f3f7120ab20c5c
-      internalID: -631303073
+      spriteID: 23fef040055652d4d90607ee2da9f594
+      internalID: -537780719
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking character sheet_5
+      name: Back front top
       rect:
         serializedVersion: 2
-        x: 413
-        y: 207
+        x: 409
+        y: 220
         width: 59
         height: 171
       alignment: 9
-      pivot: {x: 0.5601884, y: 0.860456}
+      pivot: {x: 0.45714504, y: 0.86965567}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5278c48d0b2f16a47ad79963e2210623
-      internalID: -1267568292
+      spriteID: 9e9047bac677dbd48bab299432046820
+      internalID: 369426842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking character sheet_6
+      name: forward back leg top
       rect:
         serializedVersion: 2
         x: 502
@@ -244,41 +244,20 @@ TextureImporter:
         width: 96
         height: 192
       alignment: 9
-      pivot: {x: 0.49263254, y: 0.8609989}
+      pivot: {x: 0.49560928, y: 0.8577573}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57c8381fc80502d42836163ca06ac832
-      internalID: 225081237
+      spriteID: 7fc170bf9b3b2ac4b83aa08d5ac02d7b
+      internalID: -2063882328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking character sheet_7
-      rect:
-        serializedVersion: 2
-        x: 686
-        y: 224
-        width: 74
-        height: 172
-      alignment: 9
-      pivot: {x: 0.50000083, y: 0.8618556}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 38a4a38adb5f42c4a81948cf2dee4b07
-      internalID: -567124566
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking character sheet_8
+      name: back leg top
       rect:
         serializedVersion: 2
         x: 840
@@ -286,182 +265,203 @@ TextureImporter:
         width: 97
         height: 191
       alignment: 9
-      pivot: {x: 0.5173774, y: 0.8309483}
+      pivot: {x: 0.49565455, y: 0.8397736}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fb0df65047874d441a71fc2aacd163f7
-      internalID: -374433608
+      spriteID: e1c35bdd91dbffd418b9d78258a46655
+      internalID: -253421713
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking character sheet_9
+      name: front leg paw
       rect:
         serializedVersion: 2
-        x: 372
-        y: 143
-        width: 45
+        x: 687
+        y: 323
+        width: 44
         height: 24
       alignment: 9
-      pivot: {x: 0.7357551, y: 0.4115912}
+      pivot: {x: 0.8064756, y: 0.37708792}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93db1786a4f1b194f95ce13f1459efce
-      internalID: 1396247053
+      spriteID: 13d750f7f546bb44d9dcd79fbda736c4
+      internalID: -248972768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking character sheet_10
+      name: torso
       rect:
         serializedVersion: 2
-        x: 469
-        y: 155
-        width: 42
-        height: 62
-      alignment: 9
-      pivot: {x: 0.6683967, y: 0.79659444}
+        x: 56
+        y: 168
+        width: 293
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d5722ad803c58a449aecd314bdbed051
-      internalID: -815421577
+      spriteID: 72866c2ba64b8224bb3646e34ac51911
+      internalID: -819534582
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking character sheet_11
+      name: front leg middle
       rect:
         serializedVersion: 2
-        x: 564
-        y: 161
-        width: 57
-        height: 66
-      alignment: 9
-      pivot: {x: 0.7233469, y: 0.68217355}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ca110e7731cc8d47a9f5ccd69b6f031
-      internalID: 401424214
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking character sheet_12
-      rect:
-        serializedVersion: 2
-        x: 697
-        y: 150
-        width: 44
-        height: 23
-      alignment: 9
-      pivot: {x: 0.8160553, y: 0.39006773}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 548009939e1cfb74e980be3ddb5dd653
-      internalID: 820010979
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking character sheet_13
-      rect:
-        serializedVersion: 2
-        x: 755
-        y: 157
+        x: 715
+        y: 227
         width: 42
         height: 63
       alignment: 9
-      pivot: {x: 0.70066905, y: 0.8210723}
+      pivot: {x: 0.6605355, y: 0.7943159}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cfe7e1cf921b51148bff73199b355729
-      internalID: 1503930364
+      spriteID: 58a02834e08af1348bbdbc6a9bb874e0
+      internalID: 1612356550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking character sheet_14
+      name: back front middle
       rect:
         serializedVersion: 2
-        x: 902
-        y: 146
-        width: 56
+        x: 430
+        y: 112
+        width: 42
+        height: 62
+      alignment: 9
+      pivot: {x: 0.64046806, y: 0.77867347}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c45cbb335aad8724ca3e924670ced8e3
+      internalID: 103677426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forward back leg middle
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 137
+        width: 57
+        height: 66
+      alignment: 9
+      pivot: {x: 0.7883301, y: 0.7745537}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809d225b726993246a4a8821c4a66b27
+      internalID: -1314808787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back leg middle
+      rect:
+        serializedVersion: 2
+        x: 899
+        y: 117
+        width: 57
         height: 67
       alignment: 9
-      pivot: {x: 0.7934799, y: 0.73900706}
+      pivot: {x: 0.75136524, y: 0.73271793}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a6e5f38d7186a24a85c0d9c81db62eb
-      internalID: -704725120
+      spriteID: df39c4d6ad9d8ea4ba96089b24fb3007
+      internalID: 1009014366
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: walking character sheet_15
+      name: back front paw
       rect:
         serializedVersion: 2
-        x: 517
-        y: 143
+        x: 344
+        y: 110
+        width: 45
+        height: 24
+      alignment: 9
+      pivot: {x: 0.7715732, y: 0.27173647}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 033edc936ccdb9143a1e7b0e11b35db0
+      internalID: -1553295768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: forward back leg paw
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 116
+        width: 46
+        height: 17
+      alignment: 9
+      pivot: {x: 0.7748294, y: 0.47521254}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aa53fc7ac287154eb0e25ff48587ba1
+      internalID: 1943792742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: back leg paw
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 109
         width: 45
         height: 16
       alignment: 9
-      pivot: {x: 0.76718885, y: 0.5}
+      pivot: {x: 0.78093666, y: 0.3683114}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f908ac84ea595944890a0702f3bbee5c
-      internalID: -288147022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: walking character sheet_16
-      rect:
-        serializedVersion: 2
-        x: 835
-        y: 143
-        width: 46
-        height: 16
-      alignment: 9
-      pivot: {x: 0.78398997, y: 0.49999905}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f6674c0a10ed8c14fb9ff04ba226b191
-      internalID: 538679019
+      spriteID: b07882208f87f604aa41e9f6027a71a7
+      internalID: -1178827891
       vertices: []
       indices: 
       edges: []
@@ -477,23 +477,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      walking character sheet_0: 205265528
-      walking character sheet_1: -1891034322
-      walking character sheet_10: -815421577
-      walking character sheet_11: 401424214
-      walking character sheet_12: 820010979
-      walking character sheet_13: 1503930364
-      walking character sheet_14: -704725120
-      walking character sheet_15: -288147022
-      walking character sheet_16: 538679019
-      walking character sheet_2: 1579438787
-      walking character sheet_3: 1409350946
-      walking character sheet_4: -631303073
-      walking character sheet_5: -1267568292
-      walking character sheet_6: 225081237
-      walking character sheet_7: -567124566
-      walking character sheet_8: -374433608
-      walking character sheet_9: 1396247053
+      Back front top: 369426842
+      back front middle: 103677426
+      back front paw: -1553295768
+      back leg middle: 1009014366
+      back leg paw: -1178827891
+      back leg top: -253421713
+      forward back leg middle: -1314808787
+      forward back leg paw: 1943792742
+      forward back leg top: -2063882328
+      front leg middle: 1612356550
+      front leg paw: -248972768
+      front leg top: -1859994476
+      head: -1813259564
+      neck: -522722835
+      tail: -1241889657
+      torso: -819534582
+      walking character sheet_4: -537780719
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

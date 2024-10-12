@@ -27,6 +27,11 @@ public class CandyNPC : Interactable
                 hasUpdated = true;
             }
         }
+        else
+        {
+            //Think about airhorn
+            completeTask(Color.clear);
+        }
     }
     public override void onBeg()
     {
@@ -44,7 +49,8 @@ public class CandyNPC : Interactable
         }
         else
         {
-            //Pet player
+            //Think about airhorn
+            completeTask(Color.clear);
         }
     }
     public override void onGrowl()
@@ -60,6 +66,11 @@ public class CandyNPC : Interactable
                 player.tasksCompleted++;
                 hasUpdated = true;
             }
+        }
+        else
+        {
+            //Think about airhorn
+            completeTask(Color.clear);
         }
     }
     public override void onInteract()

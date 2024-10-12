@@ -24,7 +24,7 @@ public class ThiefNPC : Interactable
         {
             rb.velocity = new Vector3(10f, 0, 0);
         }
-        if (transform.position.x >= 35)
+        if (transform.position.x >= 65)
         {
             Destroy(gameObject);
         }

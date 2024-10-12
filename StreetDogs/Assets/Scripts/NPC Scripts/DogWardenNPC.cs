@@ -24,8 +24,8 @@ public class DogWardenNPC : Interactable
         base.Update();
         if (shouldMoveLeft)
         {
-            rb.velocity = new Vector3(-2.5f, 0, 0);
-            if(transform.position.x <= 35)
+            rb.velocity = new Vector3(-5f, 0, 0);
+            if(transform.position.x <= 88)
             {
                 shouldMoveLeft = false;
                 rb.velocity = Vector3.zero;
@@ -35,7 +35,7 @@ public class DogWardenNPC : Interactable
         {
             rb.velocity = new Vector3(10f, 0, 0);
         }
-        if(transform.position.x >= 45)
+        if(transform.position.x >= 110)
         {
             Destroy(gameObject);
         }

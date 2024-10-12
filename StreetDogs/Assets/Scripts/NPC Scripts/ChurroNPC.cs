@@ -38,6 +38,7 @@ public class ChurroNPC : Interactable
     //Needs override keyword to create unique behavior
     public override void onBark()
     {
+       
         base.onBark();
         
         //Spawns churro and correctly completes task

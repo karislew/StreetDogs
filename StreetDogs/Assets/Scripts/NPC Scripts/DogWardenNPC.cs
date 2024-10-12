@@ -25,7 +25,7 @@ public class DogWardenNPC : Interactable
         if (shouldMoveLeft)
         {
             rb.velocity = new Vector3(-5f, 0, 0);
-            if(transform.position.x <= 88)
+            if(transform.position.x <= 98)
             {
                 shouldMoveLeft = false;
                 rb.velocity = Vector3.zero;

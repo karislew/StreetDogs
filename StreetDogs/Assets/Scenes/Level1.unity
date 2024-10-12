@@ -2931,6 +2931,20 @@ MonoBehaviour:
   player: {fileID: 0}
   candy: {fileID: 2079751659141476953, guid: a9a3a3887959c9f459e231f8ab6b0764, type: 3}
   hasAirhorn: 0
+  barkdialogue:
+    sentences:
+    - I just want my airhorn
+  interactdialogue:
+    sentences:
+    - Have you seen my airhorn?
+  begdialogue:
+    sentences:
+    - That thief took my airhorn
+  growldialogue:
+    sentences:
+    - Please I just want my airhorn
+  npcDialogueBox: {fileID: 1488270753}
+  npcDialogueText: {fileID: 961056737}
 --- !u!4 &868442639 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3578950689295442138, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
@@ -3934,11 +3948,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: barkDialogue.sentences.Array.data[0]
-      value: EEk
+      value: You scared me!
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: growlDialogue.sentences.Array.data[0]
-      value: Go away
+      value: You're a pretty nice dog
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: interactDialogue.sentences.Array.size
@@ -3946,7 +3960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: interactDialogue.sentences.Array.data[0]
-      value: Here u go
+      value: My airhorn! Thank you
       objectReference: {fileID: 0}
     - target: {fileID: 8155971417302114900, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_Color.b

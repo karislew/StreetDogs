@@ -2796,6 +2796,7 @@ MonoBehaviour:
   newCurrentTaskText: 
   player: {fileID: 0}
   churro: {fileID: 2079751659141476953, guid: 04e177fa8a74f7743881012e78d7cd07, type: 3}
+  churroLocation: {fileID: 940595460}
   churroSprite: {fileID: 319904041}
 --- !u!1 &591907662
 GameObject:
@@ -4163,6 +4164,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &940595460
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 940595461}
+  m_Layer: 6
+  m_Name: ChurroDrop
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &940595461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 940595460}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.9, y: 0.443, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6048664819045183903}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &959059293
 GameObject:
   m_ObjectHideFlags: 0
@@ -11180,6 +11212,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3578950689295442138, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       insertIndex: -1
       addedObject: {fileID: 319904042}
+    - targetCorrespondingSourceObject: {fileID: 3578950689295442138, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 940595461}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8508401039188529331, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       insertIndex: -1

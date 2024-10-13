@@ -11,6 +11,7 @@ public class ChurroNPC : Interactable
     public GameObject churro;
     private bool shouldRun = false;
     private Rigidbody2D rb;
+    public GameObject churroLocation;
     //private DialogueTrigger dialogueTrigger;
 
     //not the best way to do this, but I want it to seem like the dog
@@ -62,7 +63,7 @@ public class ChurroNPC : Interactable
         base.onBeg();
 
         //Spawns churro and correctly completes task
-        Instantiate(churro, gameObject.transform.position, Quaternion.identity);
+        Instantiate(churro, churroLocation.transform.position, Quaternion.identity);
         completeTask(Color.green);
         player.tasksCompleted++;
         hasDoneAction = true;

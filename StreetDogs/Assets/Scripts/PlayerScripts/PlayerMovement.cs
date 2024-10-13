@@ -21,6 +21,9 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask layerMask;
     private RaycastHit2D hit;
 
+    Animator playerAnimator;
+    public GameObject playerObj;
+
     private void Awake()
     {
         //Grabs character controller component
@@ -28,6 +31,8 @@ public class PlayerMovement : MonoBehaviour
 
         //Grabs character sprite
         sprite = GetComponent<SpriteRenderer>();
+
+        playerAnimator = GetComponent<Animator>();
         
     }
 
@@ -40,18 +45,23 @@ public class PlayerMovement : MonoBehaviour
     {
         //Creates velocity
         rb.velocity = direction * moveSpeed;
+        float animVelocity = Mathf.Abs(rb.velocity.x);
+        playerAnimator.SetFloat("velocity", animVelocity);
+        print(animVelocity);
 
         //Flips sprite and triggers based on direction player is moving
         if (rb.velocity.x > 0)
         {
-            sprite.flipX = true;
+            playerObj.transform.localPosition = new Vector3(-80.8700027f, 13.183609f, -0.11031574f);
+            playerObj.transform.localRotation = new Quaternion(0, -1, 0, 0);
             speechBubble.gameObject.transform.localPosition = new Vector3(6, 2.25f, -0.5f);
             interactionTrigger.offset = new Vector2(1, 0);
             eatingTrigger.offset = new Vector2(1, 0);
         }
         else if (rb.velocity.x < 0)
         {
-            sprite.flipX = false;
+            playerObj.transform.localPosition = new Vector3(80.8700027f, 13.183609f, -0.11031574f);
+            playerObj.transform.localRotation = new Quaternion(0, 0, 0, 0);
             speechBubble.gameObject.transform.localPosition = new Vector3(-6, 2.25f, -0.5f);
             interactionTrigger.offset = new Vector2(-1, 0);
             eatingTrigger.offset = new Vector2(-5, 0);

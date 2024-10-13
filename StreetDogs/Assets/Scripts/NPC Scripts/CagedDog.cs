@@ -1,12 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class CagedDog : Interactable
 {
     public DogWardenNPC warden;
     public GameObject cage;
     public bool hasKey = false;
+
+    public Image fade;
+    private bool shouldFade;
+    private float fadeAlpha;
     
     private void Awake()
     {
@@ -18,6 +24,19 @@ public class CagedDog : Interactable
     private void Update()
     {
         base.Update();
+        if (shouldFade)
+        {
+            if (fadeAlpha < 1)
+            {
+                fadeAlpha += .005f;
+                fade.color = new Color(0, 0, 0, fadeAlpha);
+            }
+            else
+            {
+                SceneManager.LoadScene("MainMenu");
+            }
+        }
+
     }
 
     public override void onBark()
@@ -48,11 +67,18 @@ public class CagedDog : Interactable
             completeTask(Color.green);
             hasDoneAction = true;
             canBeInteracted = false;
+            StartCoroutine(FadeDelay());
             Destroy(cage);
         }
         else
         {
             completeTask(Color.clear);
         }
+    }
+
+    IEnumerator FadeDelay()
+    {
+        yield return new WaitForSeconds(3);
+        shouldFade = true;
     }
 }

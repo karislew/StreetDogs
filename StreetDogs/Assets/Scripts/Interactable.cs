@@ -53,7 +53,11 @@ public class Interactable : MonoBehaviour
     //DEFAULT BEHAVIORS, EDIT IN CHILD CLASSES
 
     public virtual void onBark()
-    {TriggerDialogue("Bark");}
+    {
+       
+        TriggerDialogue("Bark");
+       
+    }
     public virtual void onGrowl()
     {TriggerDialogue("Growl");}
     public virtual void onBeg()

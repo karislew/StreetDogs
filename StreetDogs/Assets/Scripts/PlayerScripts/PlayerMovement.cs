@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = direction * moveSpeed;
         float animVelocity = Mathf.Abs(rb.velocity.x);
         playerAnimator.SetFloat("velocity", animVelocity);
-        print(animVelocity);
+        //print(animVelocity);
 
         //Flips sprite and triggers based on direction player is moving
         if (rb.velocity.x > 0)

@@ -1719,6 +1719,90 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &319904041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 319904042}
+  - component: {fileID: 319904043}
+  m_Layer: 0
+  m_Name: churro
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &319904042
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319904041}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.12, y: 0.539, z: -0.5}
+  m_LocalScale: {x: 0.1769022, y: 0.065948606, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6048664819045183903}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &319904043
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319904041}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e03c263de51ba5742a0e755cbbd9eb61, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5, y: 5}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &341874424
 GameObject:
   m_ObjectHideFlags: 0
@@ -1877,15 +1961,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: begDialogue.sentences.Array.data[0]
-      value: How cute
+      value: That's cute!
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: barkDialogue.sentences.Array.data[0]
-      value: Get Away from ME
+      value: Huh a dog? No collar?
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: growlDialogue.sentences.Array.data[0]
-      value: Youre gonna regret that
+      value: I'm going back to the US!
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: interactDialogue.sentences.Array.size
@@ -1893,7 +1977,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: interactDialogue.sentences.Array.data[0]
-      value: Shoo
+      value: Heh... this airhorn will be great when I get home.
       objectReference: {fileID: 0}
     - target: {fileID: 8155971417302114900, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_Color.b
@@ -2340,6 +2424,38 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: begDialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: barkDialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: growlDialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: begDialogue.sentences.Array.data[0]
+      value: Shoo!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: barkDialogue.sentences.Array.data[0]
+      value: Ew, what's a dog doing here? Shoo!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: growlDialogue.sentences.Array.data[0]
+      value: Shoo!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: interactDialogue.sentences.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: interactDialogue.sentences.Array.data[0]
+      value: '*Whistling*'
+      objectReference: {fileID: 0}
     - target: {fileID: 8155971417302114900, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_Color.b
       value: 0.46226418
@@ -2680,6 +2796,7 @@ MonoBehaviour:
   newCurrentTaskText: 
   player: {fileID: 0}
   churro: {fileID: 2079751659141476953, guid: 04e177fa8a74f7743881012e78d7cd07, type: 3}
+  churroSprite: {fileID: 319904041}
 --- !u!1 &591907662
 GameObject:
   m_ObjectHideFlags: 0
@@ -3362,16 +3479,16 @@ MonoBehaviour:
   hasAirhorn: 0
   barkdialogue:
     sentences:
-    - I just want my airhorn
+    - That gringo took my airhorn
   interactdialogue:
     sentences:
-    - Have you seen my airhorn?
+    - That gringo took my airhorn
   begdialogue:
     sentences:
-    - That thief took my airhorn
+    - That gringo took my airhorn
   growldialogue:
     sentences:
-    - Please I just want my airhorn
+    - That gringo took my airhorn
   npcDialogueBox: {fileID: 1488270753}
   npcDialogueText: {fileID: 961056737}
 --- !u!4 &868442639 stripped
@@ -4373,15 +4490,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: begDialogue.sentences.Array.data[0]
-      value: Here cutie
+      value: Gracias!
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: barkDialogue.sentences.Array.data[0]
-      value: You scared me!
+      value: Hola perro!
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: growlDialogue.sentences.Array.data[0]
-      value: You're a pretty nice dog
+      value: Calmate, perrito!
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: interactDialogue.sentences.Array.size
@@ -4389,7 +4506,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: interactDialogue.sentences.Array.data[0]
-      value: My airhorn! Thank you
+      value: My airhorn! Gracias!
       objectReference: {fileID: 0}
     - target: {fileID: 8155971417302114900, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_Color.b
@@ -5256,6 +5373,90 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1111967785}
   m_CullTransparentMesh: 1
+--- !u!1 &1120098683
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1120098684}
+  - component: {fileID: 1120098685}
+  m_Layer: 6
+  m_Name: Sprite
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1120098684
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120098683}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.5287, y: 0.1817, z: 0}
+  m_LocalScale: {x: 0.21758631, y: 0.06534204, z: 0}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 6048664819045183903}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1120098685
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1120098683}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 14424f524e414b04d84dbb7c7f6c636a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 33.690166, y: 23.82}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1125909130
 GameObject:
   m_ObjectHideFlags: 0
@@ -10846,6 +11047,14 @@ PrefabInstance:
       propertyPath: m_ExcludeLayers.m_Bits
       value: 704
       objectReference: {fileID: 0}
+    - target: {fileID: 495658767817242383, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 495658767817242383, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3578950689295442138, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5
@@ -10936,15 +11145,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: begDialogue.sentences.Array.data[0]
-      value: Aww youre such a cute little dog.
+      value: Aww, you're such a cute little dog.
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: barkDialogue.sentences.Array.data[0]
-      value: Eek! Take it!
+      value: Here, perro!
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: growlDialogue.sentences.Array.data[0]
-      value: 'SHOO DOG '
+      value: SHOO! Vayate!
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: interactDialogue.sentences.Array.size
@@ -10958,12 +11167,19 @@ PrefabInstance:
       propertyPath: m_Name
       value: ChurroTourist
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8155971417302114900, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 3578950689295442138, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1663783430634341047}
+    - targetCorrespondingSourceObject: {fileID: 3578950689295442138, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1120098684}
+    - targetCorrespondingSourceObject: {fileID: 3578950689295442138, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 319904042}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8508401039188529331, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       insertIndex: -1

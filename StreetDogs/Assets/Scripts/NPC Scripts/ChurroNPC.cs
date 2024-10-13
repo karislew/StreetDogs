@@ -13,6 +13,10 @@ public class ChurroNPC : Interactable
     private Rigidbody2D rb;
     //private DialogueTrigger dialogueTrigger;
 
+    //not the best way to do this, but I want it to seem like the dog
+    //gets an existing churro - Rafa
+    public GameObject churroSprite;
+
     private void Awake()
     {
         //Uses behavior from parent class, with additional code
@@ -27,7 +31,7 @@ public class ChurroNPC : Interactable
         base.Update();
         if (shouldRun)
         {
-            rb.velocity = new Vector3(10f, 0, 0);
+            rb.velocity = new Vector3(5f, 0, 0);
         }
         if(transform.position.x >= 15)
         {
@@ -50,6 +54,8 @@ public class ChurroNPC : Interactable
         hasDoneAction = true;
         canBeInteracted = false;
         //dialogueTrigger.TriggerDialogue("Bark");
+
+        Destroy(churroSprite);
     }
     public override void onBeg()
     {
@@ -61,6 +67,9 @@ public class ChurroNPC : Interactable
         player.tasksCompleted++;
         hasDoneAction = true;
         canBeInteracted = false;
+
+        // delete existing in-scene churro
+        Destroy(churroSprite);
         //dialogueTrigger.TriggerDialogue("Beg");
     }
     public override void onGrowl()

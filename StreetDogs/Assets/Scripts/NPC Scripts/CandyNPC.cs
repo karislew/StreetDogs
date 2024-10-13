@@ -38,11 +38,11 @@ public class CandyNPC : Interactable
         if (hasAirhorn)
         {
             base.onBark();
-            newCurrentTaskText = "";
             Instantiate(candy, gameObject.transform.position, Quaternion.identity);
             if (hasUpdated == false)
             {
-                completeTask(Color.green);
+                taskIcon.sprite = null;
+                taskIcon.color = new Color(1, 1, 1, 0);
                 player.tasksCompleted++;
                 hasUpdated = true;
             }
@@ -51,7 +51,7 @@ public class CandyNPC : Interactable
         {
             NoAirHorn(barkdialogue);
             //Think about airhorn
-            completeTask(Color.clear);
+            completeTask();
         }
     }
     public override void onBeg()
@@ -61,11 +61,11 @@ public class CandyNPC : Interactable
         if (hasAirhorn)
         {
             base.onBeg();
-            newCurrentTaskText = "";
             Instantiate(candy, gameObject.transform.position, Quaternion.identity);
             if (hasUpdated == false)
             {
-                completeTask(Color.green);
+                taskIcon.sprite = null;
+                taskIcon.color = new Color(1, 1, 1, 0);
                 player.tasksCompleted++;
                 hasUpdated = true;
             }
@@ -75,7 +75,7 @@ public class CandyNPC : Interactable
            
             NoAirHorn(begdialogue);
             //Think about airhorn
-            completeTask(Color.clear);
+            completeTask();
         }
     }
     public override void onGrowl()
@@ -84,11 +84,11 @@ public class CandyNPC : Interactable
         if (hasAirhorn)
         {
             base.onGrowl();
-            newCurrentTaskText = "";
             Instantiate(candy, gameObject.transform.position, Quaternion.identity);
             if (hasUpdated == false)
             {
-                completeTask(Color.green);
+                taskIcon.sprite = null;
+                taskIcon.color = new Color(1, 1, 1, 0);
                 player.tasksCompleted++;
                 hasUpdated = true;
             }
@@ -98,7 +98,7 @@ public class CandyNPC : Interactable
             
             NoAirHorn(growldialogue);
             //Think about airhorn
-            completeTask(Color.clear);
+            completeTask();
         }
     }
     public override void onInteract()
@@ -109,11 +109,11 @@ public class CandyNPC : Interactable
         {
             base.onInteract();
             
-            newCurrentTaskText = "";
             Instantiate(candy, gameObject.transform.position, Quaternion.identity);
             if (hasUpdated == false)
             {
-                completeTask(Color.green);
+                taskIcon.sprite = null;
+                taskIcon.color = new Color(1, 1, 1, 0);
                 player.tasksCompleted++;
                 hasUpdated = true;
             }
@@ -123,7 +123,7 @@ public class CandyNPC : Interactable
       
             NoAirHorn(interactdialogue);
             //Think about airhorn
-            completeTask(Color.clear);
+            completeTask();
         }
     }
     private void NoAirHorn(Dialogue chosenDialogue)

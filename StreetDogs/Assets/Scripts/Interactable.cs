@@ -12,9 +12,8 @@ public class Interactable : MonoBehaviour
     public bool canBeInteracted;
     public bool hasDoneAction;
     public SpriteRenderer signal;
-    public TextMeshProUGUI currentTask;
-    public Image completionIcon;
-    public string newCurrentTaskText;
+    public Image taskIcon;
+    public Sprite newTaskIcon;
     //Increment player's task count when they've been done CORRECTLY (see ChurroNPC)
     public PlayerActions player;
     protected DialogueTrigger dialogueTrigger;
@@ -24,8 +23,7 @@ public class Interactable : MonoBehaviour
     {
         dialogueTrigger = GetComponent<DialogueTrigger>();
         signal = gameObject.transform.GetChild(0).GetComponent<SpriteRenderer>();
-        currentTask = GameObject.FindGameObjectWithTag("CurrentTask").GetComponent<TextMeshProUGUI>();
-        completionIcon = GameObject.FindGameObjectWithTag("CompletionIndicator").GetComponent<Image>();
+        taskIcon = GameObject.FindGameObjectWithTag("CompletionIndicator").GetComponent<Image>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerActions>();
     }
 
@@ -66,18 +64,10 @@ public class Interactable : MonoBehaviour
     {TriggerDialogue("Interact");}
     
     //Green for CORRECT COMPLETION, Red for FAILED TASK
-    public void completeTask(Color boxColor)
+    public void completeTask()
     {
-        StartCoroutine(TaskUpdate(boxColor));
+        taskIcon.color = new Color(1, 1, 1, 1);
+        taskIcon.sprite = newTaskIcon;
     }
 
-    //Highlights completed task, then updates to new task
-    IEnumerator TaskUpdate(Color boxColor)
-    {
-        completionIcon.GetComponent<Image>().enabled = true;
-        completionIcon.color = boxColor;
-        yield return new WaitForSeconds(1);
-        completionIcon.GetComponent<Image>().enabled = false;
-        currentTask.text = newCurrentTaskText;
-    }
 }

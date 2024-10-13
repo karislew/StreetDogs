@@ -56,7 +56,7 @@ public class CagedDog : Interactable
 
     public override void onBark()
     {
-        completeTask(Color.clear);
+        completeTask();
         //START BARKING
         warden.shouldMoveLeft = true;
         warden.shouldDropKey = true;
@@ -64,11 +64,11 @@ public class CagedDog : Interactable
     public override void onBeg()
     {
         //No behavior
-        completeTask(Color.clear);
+        completeTask();
     }
     public override void onGrowl()
     {
-        completeTask(Color.clear);
+        completeTask();
         //START BARKING
         warden.shouldMoveLeft = true;
         warden.shouldDropKey = true;
@@ -77,9 +77,9 @@ public class CagedDog : Interactable
     {
         if (hasKey)
         {
-            newCurrentTaskText = "";
             player.tasksCompleted++;
-            completeTask(Color.green);
+            taskIcon.sprite = null;
+            taskIcon.color = new Color(1, 1, 1, 0);
             hasDoneAction = true;
             canBeInteracted = false;
             StartCoroutine(FadeDelay());
@@ -87,7 +87,7 @@ public class CagedDog : Interactable
         }
         else
         {
-            completeTask(Color.clear);
+            completeTask();
         }
     }
 

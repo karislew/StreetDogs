@@ -48,7 +48,8 @@ public class ChurroNPC : Interactable
         
         //Spawns churro and correctly completes task
         Instantiate(churro, gameObject.transform.position, Quaternion.identity);
-        completeTask(Color.green);
+        completeTask();
+        taskIcon.color = new Color(1, 1, 1, 0);
         //Increment player's task count when they've been done CORRECTLY (public opinion counter kinda)
         player.tasksCompleted++;
         //NPC has done an action and cannot be interacted with anymore
@@ -64,7 +65,8 @@ public class ChurroNPC : Interactable
 
         //Spawns churro and correctly completes task
         Instantiate(churro, churroLocation.transform.position, Quaternion.identity);
-        completeTask(Color.green);
+        completeTask();
+        taskIcon.color = new Color(1, 1, 1, 0);
         player.tasksCompleted++;
         hasDoneAction = true;
         canBeInteracted = false;
@@ -78,7 +80,8 @@ public class ChurroNPC : Interactable
         base.onGrowl();
         //Runs away and fails task
         shouldRun = true;
-        completeTask(Color.red);
+        completeTask();
+        taskIcon.color = new Color(1, 1, 1, 0);
         hasDoneAction = true;
         canBeInteracted = false;
        // dialogueTrigger.TriggerDialogue("Growl");

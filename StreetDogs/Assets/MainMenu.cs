@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
     }
     public void Options()
     {
-        EventSystem.current.SetSelectedGameObject(optionsButton);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
     public void Back()
     {

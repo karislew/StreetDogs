@@ -1979,6 +1979,10 @@ PrefabInstance:
       propertyPath: interactDialogue.sentences.Array.data[0]
       value: Heh... this airhorn will be great when I get home.
       objectReference: {fileID: 0}
+    - target: {fileID: 5782675310936039517, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.746
+      objectReference: {fileID: 0}
     - target: {fileID: 8155971417302114900, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_Color.b
       value: 0
@@ -4539,6 +4543,10 @@ PrefabInstance:
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: interactDialogue.sentences.Array.data[0]
       value: My airhorn! Gracias!
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782675310936039517, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.764
       objectReference: {fileID: 0}
     - target: {fileID: 8155971417302114900, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_Color.b
@@ -7396,7 +7404,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &1488270754
 Animator:
   serializedVersion: 5
@@ -11031,7 +11039,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4480767273800210811
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11194,6 +11202,10 @@ PrefabInstance:
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: interactDialogue.sentences.Array.data[0]
       value: Wanna churro?
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782675310936039517, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.928
       objectReference: {fileID: 0}
     - target: {fileID: 8508401039188529331, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_Name
@@ -11367,7 +11379,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7688344823766792816
 RectTransform:
   m_ObjectHideFlags: 0

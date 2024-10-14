@@ -3860,16 +3860,16 @@ MonoBehaviour:
   hasAirhorn: 0
   barkdialogue:
     sentences:
-    - That gringo took my airhorn
+    - She took my airhorn...
   interactdialogue:
     sentences:
-    - That gringo took my airhorn
+    - She took my airhorn...
   begdialogue:
     sentences:
-    - That gringo took my airhorn
+    - She took my airhorn...
   growldialogue:
     sentences:
-    - That gringo took my airhorn
+    - She took my airhorn...
   npcDialogueBox: {fileID: 1488270753}
   npcDialogueText: {fileID: 961056737}
 --- !u!4 &868442639 stripped

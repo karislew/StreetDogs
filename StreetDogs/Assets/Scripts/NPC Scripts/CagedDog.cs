@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
+//using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -14,8 +14,8 @@ public class CagedDog : Interactable
     public Image fade;
     private bool shouldFade;
     private float fadeAlpha;
-    [SerializeField] SceneAsset creditsScene;
-    private string creditsSceneName;
+    //[SerializeField] SceneAsset creditsScene;
+    //private string creditsSceneName;
     
     private void Awake()
     {
@@ -25,14 +25,14 @@ public class CagedDog : Interactable
 
     private void Start()
     {
-        if (creditsScene != null)
-        {
-            creditsSceneName = creditsScene.name;
-        }
-        else
-        {
-            Debug.LogWarning("Credits Scene is not set!");
-        }
+        //if (creditsScene != null)
+        //{
+            //creditsSceneName = creditsScene.name;
+        //}
+        //else
+        //{
+            //Debug.LogWarning("Credits Scene is not set!");
+        //}
     }
 
     //Makes character run away and disappear for Growl interaction
@@ -48,7 +48,7 @@ public class CagedDog : Interactable
             }
             else
             {
-                SceneManager.LoadScene(creditsScene.name);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
             }
         }
 

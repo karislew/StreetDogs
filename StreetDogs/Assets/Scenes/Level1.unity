@@ -674,7 +674,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e11514ec4956c324ba92af95687d153b, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -741,7 +741,7 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_renderer: {fileID: 141552595}
   m_maskType: 0
 --- !u!23 &141552595
@@ -1920,7 +1920,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3578950689295442138, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.11072934
+      value: 0.11827
       objectReference: {fileID: 0}
     - target: {fileID: 3578950689295442138, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_LocalScale.y
@@ -1932,11 +1932,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3578950689295442138, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 55
+      value: 54.99
       objectReference: {fileID: 0}
     - target: {fileID: 3578950689295442138, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.95
+      value: -1.96
       objectReference: {fileID: 0}
     - target: {fileID: 3578950689295442138, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2004,7 +2004,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: growlDialogue.sentences.Array.data[0]
-      value: I'm going back to the US!
+      value: I gotta get outta here!!
       objectReference: {fileID: 0}
     - target: {fileID: 5635736955772005891, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: interactDialogue.sentences.Array.size
@@ -2015,8 +2015,20 @@ PrefabInstance:
       value: Heh... this airhorn will be great when I get home.
       objectReference: {fileID: 0}
     - target: {fileID: 5782675310936039517, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.2439383
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782675310936039517, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.9378918
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782675310936039517, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10.082
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782675310936039517, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.746
+      value: 14.987
       objectReference: {fileID: 0}
     - target: {fileID: 8155971417302114900, guid: 818c66913127a6546ae5557b098e4d31, type: 3}
       propertyPath: m_Sprite
@@ -4701,7 +4713,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e11514ec4956c324ba92af95687d153b, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4768,7 +4780,7 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_renderer: {fileID: 961056738}
   m_maskType: 0
 --- !u!23 &961056738
@@ -11958,7 +11970,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e11514ec4956c324ba92af95687d153b, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -12025,7 +12037,7 @@ MonoBehaviour:
   _SortingLayer: 0
   _SortingLayerID: 0
   _SortingOrder: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_renderer: {fileID: 6937911083906171462}
   m_maskType: 0
 --- !u!1 &8391335160311408727
